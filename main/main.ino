@@ -1,22 +1,7 @@
 
-//#include <lol.h>
-
-const byte RedLED = 2;
-const byte YellowLED = 3;
-const byte GreenLED = 4;
-const byte Buzzer = 5;
-
-const byte rotateLeft = 11;
-const byte rotateRight = 12;
-const byte FireButton = 13;
-
-const byte Photocell = A0;
-
-byte input_FireButton = 1;   // Default pullup value
-int input_Photocell = 0;    
+#include "library.h"
 
 
-int shotsMissed = 0;
 
 void setup() {
   // Communication frequency
@@ -94,7 +79,4 @@ void gameOver() {
 
 
 
-
-/* PROGRAM FLOW */
-  setPinOn(GreenLED);
   
